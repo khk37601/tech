@@ -56,3 +56,23 @@ $table = <<<HTML
 </table>
 HTML; // 긴 문자열, html 표현에 편리한 기능
 ```
+
+##### 7) array_filter
+```
+$a = [1, 2, 3, 4, 5];
+
+$tmp = [];
+foreach ($a as $_) {
+    if ($_ % 2 == 0) {
+        $tmpp[] = $_; 
+    }
+}
+
+$abc = array_values(array_filter($a, functiuon ($_) {
+    return $_ % 2 == 0;
+}));
+
+```
+
+
+
