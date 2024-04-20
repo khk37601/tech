@@ -48,6 +48,11 @@ PHP >= 7
 2. $a = $a ?? ''
 ```
 
-
-
-
+##### 6) heredoc
+```
+$table = <<<HTML
+<table>
+   <tr><td>$test</td></tr>
+</table>
+HTML; // 긴 문자열, html 표현에 편리한 기능
+```
